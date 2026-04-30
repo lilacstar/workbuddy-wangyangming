@@ -1,0 +1,154 @@
+{
+  "sessions": [
+    {
+      "id": "session_20260427_091635",
+      "timestamp": "2026-04-27T09:16:35.661538",
+      "user_id": "calibration-wy_20260427091635",
+      "overall_score": 1,
+      "dimension_scores": {
+        "准确度": 1,
+        "风格一致性": 1,
+        "识别度": 1,
+        "可用性": 3
+      },
+      "feedback_text": "[校准驱动] 校准偏差较大，模型需要修正 | 准确度: 0%",
+      "suggestions": [
+        "建议重新校准",
+        "建议追加完整问卷"
+      ]
+    },
+    {
+      "id": "session_20260427_095243",
+      "timestamp": "2026-04-27T09:52:43.839599",
+      "user_id": "test",
+      "overall_score": 4,
+      "dimension_scores": {},
+      "feedback_text": "清晰",
+      "suggestions": []
+    },
+    {
+      "id": "session_20260427_095243",
+      "timestamp": "2026-04-27T09:52:43.840229",
+      "user_id": "test",
+      "overall_score": 3,
+      "dimension_scores": {},
+      "feedback_text": "一般",
+      "suggestions": []
+    },
+    {
+      "id": "session_20260427_095524",
+      "timestamp": "2026-04-27T09:55:24.525241",
+      "user_id": "test",
+      "overall_score": 4,
+      "dimension_scores": {},
+      "feedback_text": "清晰",
+      "suggestions": []
+    },
+    {
+      "id": "session_20260427_095524",
+      "timestamp": "2026-04-27T09:55:24.528404",
+      "user_id": "test",
+      "overall_score": 3,
+      "dimension_scores": {},
+      "feedback_text": "一般",
+      "suggestions": []
+    },
+    {
+      "id": "session_20260427_095524",
+      "timestamp": "2026-04-27T09:55:24.532229",
+      "user_id": "calibration-test-cal-evo",
+      "overall_score": 1,
+      "dimension_scores": {
+        "准确度": 1,
+        "风格一致性": 1,
+        "识别度": 1,
+        "可用性": 3
+      },
+      "feedback_text": "[校准驱动] 校准偏差较大，模型需要修正 | 准确度: 0%",
+      "suggestions": [
+        "建议重新校准",
+        "建议追加完整问卷"
+      ]
+    },
+    {
+      "id": "session_20260427_095634",
+      "timestamp": "2026-04-27T09:56:34.058214",
+      "user_id": "verify_test_1",
+      "overall_score": 4,
+      "dimension_scores": {},
+      "feedback_text": "清晰",
+      "suggestions": []
+    },
+    {
+      "id": "session_20260427_095634",
+      "timestamp": "2026-04-27T09:56:34.061594",
+      "user_id": "verify_test_2",
+      "overall_score": 3,
+      "dimension_scores": {},
+      "feedback_text": "一般",
+      "suggestions": []
+    },
+    {
+      "id": "session_20260427_095634",
+      "timestamp": "2026-04-27T09:56:34.064936",
+      "user_id": "calibration-test-cal-evo",
+      "overall_score": 1,
+      "dimension_scores": {
+        "准确度": 1,
+        "风格一致性": 1,
+        "识别度": 1,
+        "可用性": 3
+      },
+      "feedback_text": "[校准驱动] 校准偏差较大，模型需要修正 | 准确度: 0%",
+      "suggestions": [
+        "建议重新校准",
+        "建议追加完整问卷"
+      ]
+    },
+    {
+      "id": "session_20260427_095647",
+      "timestamp": "2026-04-27T09:56:47.574198",
+      "user_id": "verify_test_1",
+      "overall_score": 4,
+      "dimension_scores": {},
+      "feedback_text": "清晰",
+      "suggestions": []
+    },
+    {
+      "id": "session_20260427_095647",
+      "timestamp": "2026-04-27T09:56:47.577387",
+      "user_id": "verify_test_2",
+      "overall_score": 3,
+      "dimension_scores": {},
+      "feedback_text": "一般",
+      "suggestions": []
+    },
+    {
+      "id": "session_20260427_095647",
+      "timestamp": "2026-04-27T09:56:47.578533",
+      "user_id": "calibration-test-cal-evo",
+      "overall_score": 1,
+      "dimension_scores": {
+        "准确度": 1,
+        "风格一致性": 1,
+        "识别度": 1,
+        "可用性": 3
+      },
+      "feedback_text": "[校准驱动] 校准偏差较大，模型需要修正 | 准确度: 0%",
+      "suggestions": [
+        "建议重新校准",
+        "建议追加完整问卷"
+      ]
+    }
+  ],
+  "stats": {
+    "total_sessions": 12,
+    "avg_overall_score": 2.67,
+    "avg_dimension_scores": {
+      "准确度": 1.0,
+      "风格一致性": 1.0,
+      "识别度": 1.0,
+      "可用性": 3.0
+    }
+  }
+}
