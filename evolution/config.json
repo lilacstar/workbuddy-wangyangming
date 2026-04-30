@@ -1,0 +1,78 @@
+{
+  "version": "1.0.0",
+  "last_updated": "2026-04-27",
+  "module": "evolution",
+  "description": "王阳明进化模块配置文件，控制反馈收集、统计分析和校准集成的行为参数",
+
+  "paths": {
+    "feedback_dir": "evolution/feedback",
+    "ratings_file": "evolution/feedback/ratings.json",
+    "question_stats_file": "evolution/feedback/question_stats.json",
+    "improvement_log": "evolution/feedback/improvement_log.md",
+    "auto_submission_file": "evolution/feedback/auto_submissions.json"
+  },
+
+  "thresholds": {
+    "accuracy_excellent": 0.7,
+    "accuracy_acceptable": 0.5,
+    "min_sessions_for_stats": 5,
+    "min_sessions_for_report": 10
+  },
+
+  "question_metrics": {
+    "skip_rate_warning": 0.05,
+    "confusion_rate_warning": 0.1,
+    "discrimination_score_min": 0.7,
+    "feedback_flags_warning": 3
+  },
+
+  "calibration_integration": {
+    "auto_trigger_after_skill_generation": true,
+    "default_question_count": 5,
+    "auto_forward_to_evolution": true,
+    "forward_on_low_accuracy": true,
+    "forward_accuracy_threshold": 0.5
+  },
+
+  "rating_dimensions": [
+    "准确度",
+    "风格一致性",
+    "识别度",
+    "可用性"
+  ],
+
+  "auto_submission": {
+    "enabled": true,
+    "prompt_template": "生成的Skill像不像你？请评分（1-5）：1=完全不像，5=非常像我",
+    "reminder_after_hours": 24,
+    "max_reminders": 2
+  },
+
+  "reporting": {
+    "include_radar_chart": true,
+    "include_dimension_breakdown": true,
+    "include_improvement_suggestions": true,
+    "report_format": "markdown"
+  },
+
+  "calibration_result_mapping": {
+    "accuracy_to_evolution_score": {
+      "description": "将校准准确度映射为 evolution 评分",
+      "0.7_and_above": {
+        "evolution_score": 5,
+        "feedback_text": "校准一致，模型准确",
+        "suggestions": []
+      },
+      "0.5_to_0.7": {
+        "evolution_score": 3,
+        "feedback_text": "校准基本一致，存在部分偏差",
+        "suggestions": ["建议追加追问"]
+      },
+      "below_0.5": {
+        "evolution_score": 1,
+        "feedback_text": "校准偏差较大，模型需要修正",
+        "suggestions": ["建议重新校准", "建议追加完整问卷"]
+      }
+    }
+  }
+}
