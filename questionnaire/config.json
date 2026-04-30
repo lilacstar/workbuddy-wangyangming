@@ -1,0 +1,71 @@
+{
+  "version": "1.0.0",
+  "name": "王阳明·问卷配置",
+  "description": "普通人思维蒸馏问卷完整配置",
+  "totalEstimatedTime": "30分钟",
+  "phases": [
+    {
+      "phase": 1,
+      "name": "观点探测",
+      "file": "phase1.json",
+      "questionCount": 28,
+      "timeEstimate": "10分钟",
+      "output": "价值观雷达图 + 人格特质量化"
+    },
+    {
+      "phase": 2,
+      "name": "情境反应",
+      "file": "phase2.json",
+      "questionCount": 5,
+      "timeEstimate": "15分钟",
+      "output": "思维框架 + 决策模式 + 价值观"
+    },
+    {
+      "phase": 3,
+      "name": "语料采样",
+      "file": "phase3.json",
+      "questionCount": 3,
+      "timeEstimate": "5分钟",
+      "output": "表达DNA + 说话风格"
+    }
+  ],
+  "outputMapping": {
+    "skillMD": {
+      "coreModels": ["phase1", "phase2"],
+      "decisionHeuristics": ["phase2"],
+      "expressionDNA": ["phase3"],
+      "valueRanking": ["phase1"],
+      "typicalResponses": ["phase2"]
+    }
+  },
+  "calibration": {
+    "enabled": true,
+    "steps": [
+      {
+        "step": 1,
+        "action": "generate_test_paragraph",
+        "description": "AI用新风格生成一段话",
+        "userFeedback": "准确度1-5分"
+      },
+      {
+        "step": 2,
+        "action": "user_modification",
+        "description": "用户可指定修改某个心智模型或表达特征",
+        "method": "对话式"
+      },
+      {
+        "step": 3,
+        "action": "supplementary_qa",
+        "description": "针对不准确之处追加提问",
+        "trigger": "当准确度<3时自动触发"
+      }
+    ]
+  },
+  "changelog": [
+    {
+      "version": "1.0.0",
+      "date": "2026-04-24",
+      "changes": ["初始版本"]
+    }
+  ]
+}
