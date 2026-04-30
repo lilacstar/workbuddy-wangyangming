@@ -1,0 +1,246 @@
+{
+  "version": "1.0.0",
+  "name": "王阳明·语料采样任务",
+  "description": "通过写作任务采集表达风格DNA",
+  "estimatedTime": "5分钟",
+  "tasks": [
+    {
+      "id": "T1",
+      "title": "观点阐述任务",
+      "type": "writing",
+      "topic": "你认为什么是成功？",
+      "description": "请用200-300字回答这个问题，尽可能详细地表达你的真实想法。",
+      "guidance": [
+        "写出你内心真实的想法，不需要迎合'正确答案'",
+        "可以举你自己的例子，或者你观察到的例子",
+        "不需要在意文采，真实最重要"
+      ],
+      "wordLimit": {
+        "min": 200,
+        "max": 300
+      },
+      "analysisDimensions": [
+        {
+          "dimension": "sentence_pattern",
+          "name": "句式特征",
+          "indicators": [
+            "句子平均长度",
+            "短句vs长句偏好",
+            "疑问句、反问句使用频率",
+            "陈述句vs感叹句比例"
+          ]
+        },
+        {
+          "dimension": "vocabulary_style",
+          "name": "词汇风格",
+          "indicators": [
+            "学术词汇使用频率",
+            "口语化表达频率",
+            "网络用语使用",
+            "抽象概念vs具体名词"
+          ]
+        },
+        {
+          "dimension": "rhetoric",
+          "name": "修辞偏好",
+          "indicators": [
+            "比喻使用",
+            "排比使用",
+            "举例说明偏好",
+            "引用/名言使用"
+          ]
+        },
+        {
+          "dimension": "logical_structure",
+          "name": "逻辑结构",
+          "indicators": [
+            "先说结论还是先铺垫",
+            "总分总结构还是自由散点",
+            "因果论证vs举例论证",
+            "对比/类比使用"
+          ]
+        },
+        {
+          "dimension": "emotion_color",
+          "name": "情绪色彩",
+          "indicators": [
+            "理性vs感性表达",
+            "个人情感融入程度",
+            "积极/消极词使用",
+            "幽默/严肃程度"
+          ]
+        },
+        {
+          "dimension": "perspective",
+          "name": "叙事视角",
+          "indicators": [
+            "第一人称使用",
+            "代入'你/我们'的频率",
+            "客观分析vs主观感受",
+            "自我引用频率"
+          ]
+        }
+      ],
+      "promptHints": [
+        "成功是结果还是过程？",
+        "成功有标准吗？谁来定义？",
+        "你认为的成功和大多数人的理解一样吗？",
+        "你有没有经历过'别人觉得成功但你觉得不成功'的时刻？"
+      ]
+    },
+    {
+      "id": "T2",
+      "title": "双重视角写作",
+      "type": "dual_perspective_writing",
+      "topic": "要不要辞职创业",
+      "description": "请用两种不同的口吻，各写一段你对'要不要辞职创业'的看法，每段100-150字。",
+      "perspectives": [
+        {
+          "id": "T2-P1",
+          "label": "说服朋友",
+          "audience": "你的好朋友",
+          "tone": "亲密、私下、真诚",
+          "examplePhrases": ["跟你说句实话", "我觉得吧", "咱们认识这么久"]
+        },
+        {
+          "id": "T2-P2",
+          "label": "说服领导",
+          "audience": "你的直属领导",
+          "tone": "正式、有逻辑、有说服力",
+          "examplePhrases": ["基于以下几点考虑", "从长远来看", "我的规划是"]
+        }
+      ],
+      "guidance": [
+        "请分别模拟对不同对象说话时的语气和用词",
+        "内容上可以观点一致，但表达方式要明显不同",
+        "不需要在意文采，写出你真实会说的话"
+      ],
+      "wordLimit": {
+        "min": 100,
+        "max": 150,
+        "perPerspective": true
+      },
+      "analysisDimensions": [
+        {
+          "dimension": "audience_adaptation",
+          "name": "受众适应能力",
+          "indicators": [
+            "语言正式程度的调整",
+            "用词选择的变化",
+            "论证方式的切换",
+            "情感表达的增减"
+          ]
+        },
+        {
+          "dimension": "argument_strategy",
+          "name": "说服策略",
+          "indicators": [
+            "对朋友：情感诉求还是理性分析",
+            "对领导：逻辑论证还是利益分析",
+            "共同点：是否采用类似的核心论点"
+          ]
+        },
+        {
+          "dimension": "authenticity",
+          "name": "真实表达度",
+          "indicators": [
+            "两个版本是否都是\"你真实的说话方式\"",
+            "是否存在\"表演\"感",
+            "哪个版本更接近你日常的表达"
+          ]
+        }
+      ],
+      "promptHints": [
+        "想象你要真的跟朋友/领导聊这个话题",
+        "你会怎么开头？",
+        "你会强调什么、回避什么？"
+      ]
+    },
+    {
+      "id": "T3",
+      "title": "个人叙事任务（可选）",
+      "type": "narrative",
+      "topic": "一次重要的决定或经历",
+      "description": "请讲一个你自己的小故事，可以是你做过的一个决定、一次印象深刻的经历、或者一个你学到的东西。200-300字。",
+      "guidance": [
+        "要有细节、有过程、有感受",
+        "不需要\"有意义\"，真实的小事也可以",
+        "可以讲成功的经历，也可以讲失败/尴尬的经历"
+      ],
+      "wordLimit": {
+        "min": 200,
+        "max": 300
+      },
+      "optional": true,
+      "analysisDimensions": [
+        {
+          "dimension": "narrative_structure",
+          "name": "叙事结构",
+          "indicators": [
+            "时间线叙事还是主题叙事",
+            "背景-经过-结果的结构完整性",
+            "是否有人物对话/内心独白",
+            "高潮和转折的处理"
+          ]
+        },
+        {
+          "dimension": "detail_preference",
+          "name": "细节偏好",
+          "indicators": [
+            "数据/数字的使用",
+            "感受/情绪的描写",
+            "行动/行为的描写",
+            "环境/场景的描写"
+          ]
+        },
+        {
+          "dimension": "reflection_depth",
+          "name": "反思深度",
+          "indicators": [
+            "故事讲完是否有总结/感悟",
+            "反思是显性还是隐性",
+            "有没有\"学到了什么\"的表达"
+          ]
+        },
+        {
+          "dimension": "emotional_expression",
+          "name": "情感表达",
+          "indicators": [
+            "情绪词汇丰富度",
+            "是否克制（留白）还是直接表达",
+            "有没有\"我当时的感受是\"这样的表达"
+          ]
+        }
+      ],
+      "promptHints": [
+        "选一个你自己真正经历过的、有感触的事情",
+        "讲的时候想象你在跟人聊天",
+        "细节越具体越好"
+      ]
+    }
+  ],
+  "styleAnalysisOutput": {
+    "expressionDNA": {
+      "overallTone": "整体语调描述",
+      "sentencePreferences": "句式偏好总结",
+      "vocabularyCharacteristics": "词汇特点总结",
+      "signaturePhrases": "标志性表达/口头禅",
+      "logicalApproach": "论证逻辑偏好",
+      "emotionExpression": "情感表达方式"
+    },
+    "personalitySignals": {
+      "confidence": "自信程度信号",
+      "openness": "开放程度信号",
+      "emotionalRange": "情感丰富度信号",
+      "rationality": "理性程度信号",
+      "socialAwareness": "社交意识信号"
+    }
+  },
+  "changelog": [
+    {
+      "version": "1.0.0",
+      "date": "2026-04-24",
+      "changes": ["初始版本"]
+    }
+  ]
+}
