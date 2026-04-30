@@ -1,0 +1,1711 @@
+{
+  "version": "1.2.0",
+  "name": "王阳明·观点探测题库",
+  "description": "通过选择题探测个人价值观、人格特质与认知模式",
+  "estimatedTime": "12分钟",
+  "questionCount": 38,
+  "dimensions": [
+    {
+      "id": "self_cognition",
+      "name": "自我认知",
+      "description": "测量对自身的了解程度与反思习惯",
+      "questionIds": [
+        "A1",
+        "A2",
+        "A3",
+        "A4",
+        "A5"
+      ]
+    },
+    {
+      "id": "attribution",
+      "name": "归因模式",
+      "description": "内因/外因归因倾向",
+      "questionIds": [
+        "B1",
+        "B2",
+        "B3",
+        "B4",
+        "B5"
+      ]
+    },
+    {
+      "id": "risk_preference",
+      "name": "风险偏好",
+      "description": "激进/保守程度",
+      "questionIds": [
+        "C1",
+        "C2",
+        "C3",
+        "C4",
+        "C5"
+      ]
+    },
+    {
+      "id": "interpersonal",
+      "name": "人际取向",
+      "description": "集体/个人倾向与冲突处理",
+      "questionIds": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "D5"
+      ]
+    },
+    {
+      "id": "cognitive_style",
+      "name": "认知风格",
+      "description": "直觉/分析偏好与决策模式",
+      "questionIds": [
+        "E1",
+        "E2",
+        "E3",
+        "E4",
+        "E5"
+      ]
+    },
+    {
+      "id": "value_priority",
+      "name": "价值排序",
+      "description": "核心价值的取舍与优先级",
+      "questionIds": [
+        "F1",
+        "F2",
+        "F3",
+        "F4",
+        "F5"
+      ]
+    },
+    {
+      "id": "big_five_supplement",
+      "name": "大五人格补充",
+      "description": "开放性、尽责性、情绪稳定性探测 + 内隐价值强迫排序",
+      "questionIds": [
+        "G1",
+        "G2",
+        "G3",
+        "G4",
+        "G5"
+      ]
+    },
+    {
+      "id": "motivation_structure",
+      "name": "动机结构",
+      "description": "自我决定理论三要素：自主感、能力感、关联感",
+      "questionIds": [
+        "H1",
+        "H2",
+        "H3"
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "A1",
+      "dimension": "self_cognition",
+      "type": "single_choice",
+      "text": "你最常被身边的人用什么词形容？",
+      "options": [
+        {
+          "value": "A",
+          "label": "靠谱 / 稳重",
+          "weight": {
+            "action": 1,
+            "stability": 1
+          }
+        },
+        {
+          "value": "B",
+          "label": "有趣 / 幽默",
+          "weight": {
+            "social": 1,
+            "creativity": 1
+          }
+        },
+        {
+          "value": "C",
+          "label": "聪明 / 敏锐",
+          "weight": {
+            "intellect": 1,
+            "independence": 1
+          }
+        },
+        {
+          "value": "D",
+          "label": "善良 / 温暖",
+          "weight": {
+            "warmth": 1,
+            "cooperation": 1
+          }
+        },
+        {
+          "value": "E",
+          "label": "其他",
+          "weight": {}
+        }
+      ]
+    },
+    {
+      "id": "A2",
+      "dimension": "self_cognition",
+      "type": "single_choice",
+      "text": "你觉得自己最大的优点是？",
+      "options": [
+        {
+          "value": "A",
+          "label": "执行力强",
+          "weight": {
+            "action": 2,
+            "discipline": 1
+          }
+        },
+        {
+          "value": "B",
+          "label": "思考深度",
+          "weight": {
+            "intellect": 2,
+            "reflection": 1
+          }
+        },
+        {
+          "value": "C",
+          "label": "人际能力强",
+          "weight": {
+            "social": 2,
+            "cooperation": 1
+          }
+        },
+        {
+          "value": "D",
+          "label": "学习能力强",
+          "weight": {
+            "growth": 2,
+            "adaptability": 1
+          }
+        },
+        {
+          "value": "E",
+          "label": "其他",
+          "weight": {}
+        }
+      ]
+    },
+    {
+      "id": "A3",
+      "dimension": "self_cognition",
+      "type": "single_choice",
+      "text": "你觉得自己最大的短板是？",
+      "options": [
+        {
+          "value": "A",
+          "label": "拖延 / 懒",
+          "weight": {
+            "discipline": -2,
+            "action": -1
+          }
+        },
+        {
+          "value": "B",
+          "label": "太敏感 / 想太多",
+          "weight": {
+            "reflection": 1,
+            "emotion": -1
+          }
+        },
+        {
+          "value": "C",
+          "label": "不善表达",
+          "weight": {
+            "social": -1,
+            "expression": -2
+          }
+        },
+        {
+          "value": "D",
+          "label": "容易焦虑",
+          "weight": {
+            "stability": -1,
+            "anxiety": -2
+          }
+        },
+        {
+          "value": "E",
+          "label": "其他",
+          "weight": {}
+        }
+      ]
+    },
+    {
+      "id": "A4",
+      "dimension": "self_cognition",
+      "type": "single_choice",
+      "text": "你更倾向于通过什么方式了解自己？",
+      "options": [
+        {
+          "value": "A",
+          "label": "做事的结果",
+          "weight": {
+            "action": 1,
+            "pragmatism": 1
+          }
+        },
+        {
+          "value": "B",
+          "label": "他人的反馈",
+          "weight": {
+            "social": 1,
+            "feedback": 2
+          }
+        },
+        {
+          "value": "C",
+          "label": "独处时思考",
+          "weight": {
+            "reflection": 2,
+            "introversion": 1
+          }
+        },
+        {
+          "value": "D",
+          "label": "和人聊天",
+          "weight": {
+            "social": 1,
+            "dialogue": 1
+          }
+        },
+        {
+          "value": "E",
+          "label": "其他",
+          "weight": {}
+        }
+      ]
+    },
+    {
+      "id": "A5",
+      "dimension": "self_cognition",
+      "type": "single_choice",
+      "text": "你有没有过'突然更了解自己'的时刻？",
+      "options": [
+        {
+          "value": "A",
+          "label": "经常有",
+          "weight": {
+            "reflection": 2,
+            "self_awareness": 2
+          }
+        },
+        {
+          "value": "B",
+          "label": "偶尔有",
+          "weight": {
+            "reflection": 1,
+            "self_awareness": 1
+          }
+        },
+        {
+          "value": "C",
+          "label": "很少",
+          "weight": {
+            "reflection": -1,
+            "self_awareness": -1
+          }
+        },
+        {
+          "value": "D",
+          "label": "从来没有",
+          "weight": {
+            "reflection": -2,
+            "self_awareness": -2
+          }
+        }
+      ]
+    },
+    {
+      "id": "B1",
+      "dimension": "attribution",
+      "type": "single_choice",
+      "text": "工作中项目失败了，你第一反应是？",
+      "options": [
+        {
+          "value": "A",
+          "label": "复盘自己的问题",
+          "weight": {
+            "internal": 2,
+            "responsibility": 2
+          }
+        },
+        {
+          "value": "B",
+          "label": "分析客观原因",
+          "weight": {
+            "external": 1,
+            "analysis": 1
+          }
+        },
+        {
+          "value": "C",
+          "label": "归咎于外部因素",
+          "weight": {
+            "external": 2,
+            "defense": 1
+          }
+        },
+        {
+          "value": "D",
+          "label": "先平复情绪再分析",
+          "weight": {
+            "emotion_regulation": 1,
+            "balanced": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "B2",
+      "dimension": "attribution",
+      "type": "single_choice",
+      "text": "朋友突然对你冷淡了，你认为主要原因是？",
+      "options": [
+        {
+          "value": "A",
+          "label": "我哪里做得不好",
+          "weight": {
+            "internal": 2,
+            "self_blame": 1
+          }
+        },
+        {
+          "value": "B",
+          "label": "他可能有心事",
+          "weight": {
+            "external": 1,
+            "empathy": 1
+          }
+        },
+        {
+          "value": "C",
+          "label": "可能只是我多想了",
+          "weight": {
+            "self_protection": 1,
+            "uncertainty": 1
+          }
+        },
+        {
+          "value": "D",
+          "label": "直接问他",
+          "weight": {
+            "directness": 2,
+            "communication": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "B3",
+      "dimension": "attribution",
+      "type": "single_choice",
+      "text": "看到别人成功时，你更倾向于想？",
+      "options": [
+        {
+          "value": "A",
+          "label": "他肯定付出了很多",
+          "weight": {
+            "internal": 1,
+            "effort_belief": 1
+          }
+        },
+        {
+          "value": "B",
+          "label": "他可能有资源/背景",
+          "weight": {
+            "external": 2,
+            "circumstance": 1
+          }
+        },
+        {
+          "value": "C",
+          "label": "运气也是一部分",
+          "weight": {
+            "external": 1,
+            "luck": 1,
+            "humility": 1
+          }
+        },
+        {
+          "value": "D",
+          "label": "关我什么事",
+          "weight": {
+            "indifference": 1,
+            "focus": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "B4",
+      "dimension": "attribution",
+      "type": "single_choice",
+      "text": "你认为'性格决定命运'这句话？",
+      "options": [
+        {
+          "value": "A",
+          "label": "很对",
+          "weight": {
+            "internal": 2,
+            "determinism": 1
+          }
+        },
+        {
+          "value": "B",
+          "label": "有一定道理",
+          "weight": {
+            "internal": 1,
+            "nuance": 1
+          }
+        },
+        {
+          "value": "C",
+          "label": "不太对",
+          "weight": {
+            "external": 1,
+            "agency": 1
+          }
+        },
+        {
+          "value": "D",
+          "label": "完全不对",
+          "weight": {
+            "external": 2,
+            "free_will": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "B5",
+      "dimension": "attribution",
+      "type": "single_choice",
+      "text": "当你做了个错误决定，你会？",
+      "options": [
+        {
+          "value": "A",
+          "label": "后悔很久",
+          "weight": {
+            "rumination": 2,
+            "emotion": 1
+          }
+        },
+        {
+          "value": "B",
+          "label": "快速翻篇",
+          "weight": {
+            "adaptability": 2,
+            "resilience": 1
+          }
+        },
+        {
+          "value": "C",
+          "label": "分析原因避免再犯",
+          "weight": {
+            "learning": 2,
+            "analysis": 1
+          }
+        },
+        {
+          "value": "D",
+          "label": "试图弥补",
+          "weight": {
+            "action": 2,
+            "responsibility": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "C1",
+      "dimension": "risk_preference",
+      "type": "single_choice",
+      "text": "面对一个50%概率赚100万、50%概率亏50万的机会，你会？",
+      "options": [
+        {
+          "value": "A",
+          "label": "果断参与",
+          "weight": {
+            "risk_seeking": 3,
+            "gambling": 1
+          }
+        },
+        {
+          "value": "B",
+          "label": "谨慎参与",
+          "weight": {
+            "risk_seeking": 1,
+            "caution": 1
+          }
+        },
+        {
+          "value": "C",
+          "label": "不参与",
+          "weight": {
+            "risk_averse": 2,
+            "security": 2
+          }
+        },
+        {
+          "value": "D",
+          "label": "需要更多信息",
+          "weight": {
+            "analysis": 2,
+            "information_seeking": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "C2",
+      "dimension": "risk_preference",
+      "type": "single_choice",
+      "text": "你现在的工作有更好的机会出现，但有风险，你会？",
+      "options": [
+        {
+          "value": "A",
+          "label": "立刻跳槽",
+          "weight": {
+            "risk_seeking": 2,
+            "change": 2
+          }
+        },
+        {
+          "value": "B",
+          "label": "观望一段时间",
+          "weight": {
+            "caution": 2,
+            "analysis": 1
+          }
+        },
+        {
+          "value": "C",
+          "label": "不会考虑",
+          "weight": {
+            "stability": 2,
+            "risk_averse": 2
+          }
+        },
+        {
+          "value": "D",
+          "label": "看情况",
+          "weight": {
+            "nuance": 1,
+            "balanced": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "C3",
+      "dimension": "risk_preference",
+      "type": "text_input",
+      "text": "说一个你做过的最",
+      "placeholder": "用几句话描述这个决定...",
+      "analysis": "冒险经历的描述可反映真实的风险承担能力"
+    },
+    {
+      "id": "C4",
+      "dimension": "risk_preference",
+      "type": "single_choice",
+      "text": "你更倾向于？",
+      "options": [
+        {
+          "value": "A",
+          "label": "先计划再行动",
+          "weight": {
+            "planning": 2,
+            "caution": 1
+          }
+        },
+        {
+          "value": "B",
+          "label": "先行动再调整",
+          "weight": {
+            "action": 2,
+            "adaptability": 1
+          }
+        },
+        {
+          "value": "C",
+          "label": "边计划边行动",
+          "weight": {
+            "balanced": 2,
+            "iteration": 1
+          }
+        },
+        {
+          "value": "D",
+          "label": "看情况",
+          "weight": {
+            "nuance": 1,
+            "flexibility": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "C5",
+      "dimension": "risk_preference",
+      "type": "single_choice",
+      "text": "说一个你做过的最'冒险'的决定是什么？",
+      "options": [
+        {
+          "value": "A",
+          "label": "享受",
+          "weight": {
+            "uncertainty_embracing": 2,
+            "adventure": 2
+          }
+        },
+        {
+          "value": "B",
+          "label": "可以接受",
+          "weight": {
+            "uncertainty_tolerance": 1,
+            "adaptability": 1
+          }
+        },
+        {
+          "value": "C",
+          "label": "有些不安",
+          "weight": {
+            "uncertainty_avoidance": 1,
+            "anxiety": 1
+          }
+        },
+        {
+          "value": "D",
+          "label": "完全无法接受",
+          "weight": {
+            "uncertainty_avoidance": 2,
+            "control_need": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "D1",
+      "dimension": "interpersonal",
+      "type": "single_choice",
+      "text": "你认为自己更像是？",
+      "options": [
+        {
+          "value": "A",
+          "label": "团队中的发动机",
+          "weight": {
+            "leadership": 2,
+            "initiative": 2
+          }
+        },
+        {
+          "value": "B",
+          "label": "团队中的稳定器",
+          "weight": {
+            "stability": 2,
+            "support": 1
+          }
+        },
+        {
+          "value": "C",
+          "label": "跟随者",
+          "weight": {
+            "followership": 1,
+            "cooperation": 1
+          }
+        },
+        {
+          "value": "D",
+          "label": "独狼",
+          "weight": {
+            "independence": 2,
+            "individuality": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "D2",
+      "dimension": "interpersonal",
+      "type": "single_choice",
+      "text": "当团队意见和你不同且你有把握时，你会？",
+      "options": [
+        {
+          "value": "A",
+          "label": "坚持说服",
+          "weight": {
+            "conviction": 2,
+            "persistence": 1
+          }
+        },
+        {
+          "value": "B",
+          "label": "保留意见服从",
+          "weight": {
+            "cooperation": 1,
+            "harmony": 1
+          }
+        },
+        {
+          "value": "C",
+          "label": "寻求第三方意见",
+          "weight": {
+            "analysis": 1,
+            "mediation": 1
+          }
+        },
+        {
+          "value": "D",
+          "label": "无所谓",
+          "weight": {
+            "flexibility": 1,
+            "detachment": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "D3",
+      "dimension": "interpersonal",
+      "type": "single_choice",
+      "text": "你更看重友谊中的什么？",
+      "options": [
+        {
+          "value": "A",
+          "label": "忠诚 / 可靠",
+          "weight": {
+            "loyalty": 2,
+            "trust": 2
+          }
+        },
+        {
+          "value": "B",
+          "label": "有趣 / 能一起玩",
+          "weight": {
+            "fun": 2,
+            "social": 1
+          }
+        },
+        {
+          "value": "C",
+          "label": "能深度交流",
+          "weight": {
+            "depth": 2,
+            "intellect": 1
+          }
+        },
+        {
+          "value": "D",
+          "label": "互相支持",
+          "weight": {
+            "support": 2,
+            "reciprocity": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "D4",
+      "dimension": "interpersonal",
+      "type": "single_choice",
+      "text": "你更容易被什么样的人吸引？",
+      "options": [
+        {
+          "value": "A",
+          "label": "有能力 / 成功",
+          "weight": {
+            "competence": 2,
+            "ambition": 1
+          }
+        },
+        {
+          "value": "B",
+          "label": "有趣 / 幽默",
+          "weight": {
+            "fun": 2,
+            "social_energy": 1
+          }
+        },
+        {
+          "value": "C",
+          "label": "真诚 / 善良",
+          "weight": {
+            "authenticity": 2,
+            "warmth": 2
+          }
+        },
+        {
+          "value": "D",
+          "label": "有思想 / 深刻",
+          "weight": {
+            "intellect": 2,
+            "depth": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "D5",
+      "dimension": "interpersonal",
+      "type": "single_choice",
+      "text": "当朋友向你诉苦时，你更倾向于？",
+      "options": [
+        {
+          "value": "A",
+          "label": "给建议",
+          "weight": {
+            "advice": 2,
+            "problem_solving": 1
+          }
+        },
+        {
+          "value": "B",
+          "label": "陪伴倾听",
+          "weight": {
+            "empathy": 2,
+            "support": 1
+          }
+        },
+        {
+          "value": "C",
+          "label": "分享类似经历",
+          "weight": {
+            "rapport": 1,
+            "shared_experience": 1
+          }
+        },
+        {
+          "value": "D",
+          "label": "帮他分析问题",
+          "weight": {
+            "analysis": 2,
+            "logic": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "E1",
+      "dimension": "cognitive_style",
+      "type": "single_choice",
+      "text": "你做决定时主要依靠？",
+      "options": [
+        {
+          "value": "A",
+          "label": "理性分析",
+          "weight": {
+            "analysis": 2,
+            "logic": 2
+          }
+        },
+        {
+          "value": "B",
+          "label": "直觉 / 感觉",
+          "weight": {
+            "intuition": 2,
+            "gut_feeling": 2
+          }
+        },
+        {
+          "value": "C",
+          "label": "参考他人意见",
+          "weight": {
+            "social": 2,
+            "consensus": 1
+          }
+        },
+        {
+          "value": "D",
+          "label": "看情况",
+          "weight": {
+            "balanced": 1,
+            "contextual": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "E2",
+      "dimension": "cognitive_style",
+      "type": "single_choice",
+      "text": "你更倾向于相信？",
+      "options": [
+        {
+          "value": "A",
+          "label": "逻辑和数据",
+          "weight": {
+            "logic": 2,
+            "evidence": 2
+          }
+        },
+        {
+          "value": "B",
+          "label": "经验和直觉",
+          "weight": {
+            "experience": 2,
+            "intuition": 1
+          }
+        },
+        {
+          "value": "C",
+          "label": "权威和专家",
+          "weight": {
+            "authority": 1,
+            "expertise": 1
+          }
+        },
+        {
+          "value": "D",
+          "label": "自己的判断",
+          "weight": {
+            "autonomy": 2,
+            "confidence": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "E3",
+      "dimension": "cognitive_style",
+      "type": "single_choice",
+      "text": "你对'不确定性'的态度是？",
+      "options": [
+        {
+          "value": "A",
+          "label": "很赞同",
+          "weight": {
+            "intuition": 2,
+            "authenticity": 1
+          }
+        },
+        {
+          "value": "B",
+          "label": "部分赞同",
+          "weight": {
+            "balanced": 1,
+            "nuance": 1
+          }
+        },
+        {
+          "value": "C",
+          "label": "不太赞同",
+          "weight": {
+            "analysis": 1,
+            "caution": 1
+          }
+        },
+        {
+          "value": "D",
+          "label": "反对",
+          "weight": {
+            "logic": 2,
+            "analysis": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "E4",
+      "dimension": "cognitive_style",
+      "type": "single_choice",
+      "text": "当你遇到复杂问题时，你喜欢？",
+      "options": [
+        {
+          "value": "A",
+          "label": "拆解成小问题",
+          "weight": {
+            "analysis": 2,
+            "decomposition": 2
+          }
+        },
+        {
+          "value": "B",
+          "label": "整体把握",
+          "weight": {
+            "synthesis": 2,
+            "holistic": 1
+          }
+        },
+        {
+          "value": "C",
+          "label": "先收集更多信息",
+          "weight": {
+            "information": 2,
+            "caution": 1
+          }
+        },
+        {
+          "value": "D",
+          "label": "凭直觉先给答案",
+          "weight": {
+            "intuition": 2,
+            "speed": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "E5",
+      "dimension": "cognitive_style",
+      "type": "single_choice",
+      "text": "你更关注？",
+      "options": [
+        {
+          "value": "A",
+          "label": "过去发生了什么",
+          "weight": {
+            "past": 2,
+            "reflection": 1
+          }
+        },
+        {
+          "value": "B",
+          "label": "现在的情况",
+          "weight": {
+            "present": 2,
+            "practicality": 1
+          }
+        },
+        {
+          "value": "C",
+          "label": "未来的可能性",
+          "weight": {
+            "future": 2,
+            "vision": 2
+          }
+        },
+        {
+          "value": "D",
+          "label": "具体情况具体分析",
+          "weight": {
+            "contextual": 2,
+            "flexibility": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "F1",
+      "dimension": "value_priority",
+      "type": "ranking",
+      "text": "请对以下六项按你真实的重要程度排序（最重要=1，最不重要=6）。注意：不是按'应该'排序，而是按你内心真正最在意的排序。",
+      "items": [
+        {
+          "id": "F1-1",
+          "label": "自由（可以做自己想做的事）",
+          "weight": {
+            "autonomy": 4
+          }
+        },
+        {
+          "id": "F1-2",
+          "label": "成就感（做成一些事情）",
+          "weight": {
+            "achievement": 4
+          }
+        },
+        {
+          "id": "F1-3",
+          "label": "关系（和重要的人在一起）",
+          "weight": {
+            "relationship": 4
+          }
+        },
+        {
+          "id": "F1-4",
+          "label": "安全（稳定、可预期）",
+          "weight": {
+            "security": 4
+          }
+        },
+        {
+          "id": "F1-5",
+          "label": "被尊重（获得他人的认可和尊重）",
+          "weight": {
+            "social_esteem": 3
+          }
+        },
+        {
+          "id": "F1-6",
+          "label": "被需要（感觉自己对他人有价值）",
+          "weight": {
+            "social_utility": 3
+          }
+        }
+      ]
+    },
+    {
+      "id": "F2",
+      "dimension": "value_priority",
+      "type": "single_choice",
+      "text": "如果你发现自己错了，你会？",
+      "options": [
+        {
+          "value": "A",
+          "label": "立刻承认",
+          "weight": {
+            "integrity": 2,
+            "humility": 2
+          }
+        },
+        {
+          "value": "B",
+          "label": "看情况",
+          "weight": {
+            "practicality": 1,
+            "contextual": 1
+          }
+        },
+        {
+          "value": "C",
+          "label": "找理由辩解",
+          "weight": {
+            "self_protection": 1,
+            "face": 1
+          }
+        },
+        {
+          "value": "D",
+          "label": "很难承认",
+          "weight": {
+            "ego": 2,
+            "admission_difficulty": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "F3",
+      "dimension": "value_priority",
+      "type": "single_choice",
+      "text": "你最不愿意失去什么？",
+      "options": [
+        {
+          "value": "A",
+          "label": "尊严",
+          "weight": {
+            "dignity": 2,
+            "self_respect": 2
+          }
+        },
+        {
+          "value": "B",
+          "label": "亲情 / 友情",
+          "weight": {
+            "relationship": 2,
+            "attachment": 2
+          }
+        },
+        {
+          "value": "C",
+          "label": "健康",
+          "weight": {
+            "health": 2,
+            "wellbeing": 1
+          }
+        },
+        {
+          "value": "D",
+          "label": "机会",
+          "weight": {
+            "opportunity": 2,
+            "potential": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "F4",
+      "dimension": "value_priority",
+      "type": "single_choice",
+      "text": "你觉得人生的意义主要来自？",
+      "options": [
+        {
+          "value": "A",
+          "label": "自我实现",
+          "weight": {
+            "self_actualization": 2,
+            "growth": 1
+          }
+        },
+        {
+          "value": "B",
+          "label": "爱与被爱",
+          "weight": {
+            "love": 2,
+            "connection": 1
+          }
+        },
+        {
+          "value": "C",
+          "label": "对社会的贡献",
+          "weight": {
+            "contribution": 2,
+            "meaning": 1
+          }
+        },
+        {
+          "value": "D",
+          "label": "体验和经历",
+          "weight": {
+            "experience": 2,
+            "adventure": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "F5",
+      "dimension": "value_priority",
+      "type": "single_choice",
+      "text": "在工作中，你最看重？",
+      "options": [
+        {
+          "value": "A",
+          "label": "薪资待遇",
+          "weight": {
+            "compensation": 2,
+            "security": 1
+          }
+        },
+        {
+          "value": "B",
+          "label": "成长空间",
+          "weight": {
+            "growth": 2,
+            "learning": 1
+          }
+        },
+        {
+          "value": "C",
+          "label": "工作氛围",
+          "weight": {
+            "atmosphere": 2,
+            "relationships": 1
+          }
+        },
+        {
+          "value": "D",
+          "label": "意义感",
+          "weight": {
+            "meaning": 2,
+            "purpose": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "G1",
+      "dimension": "big_five_supplement",
+      "type": "single_choice",
+      "text": "你平时会主动接触哲学、艺术或抽象思维类的话题吗？",
+      "options": [
+        {
+          "value": "A",
+          "label": "经常，我很感兴趣",
+          "weight": {
+            "openness": 3
+          }
+        },
+        {
+          "value": "B",
+          "label": "偶尔，觉得有意思",
+          "weight": {
+            "openness": 1
+          }
+        },
+        {
+          "value": "C",
+          "label": "很少，感觉用不上",
+          "weight": {
+            "openness": -1,
+            "pragmatism": 1
+          }
+        },
+        {
+          "value": "D",
+          "label": "几乎不会",
+          "weight": {
+            "openness": -2,
+            "pragmatism": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "G2",
+      "dimension": "big_five_supplement",
+      "type": "single_choice",
+      "text": "你更倾向于？",
+      "options": [
+        {
+          "value": "A",
+          "label": "提前做好详细计划再行动",
+          "weight": {
+            "conscientiousness": 3,
+            "planning": 2
+          }
+        },
+        {
+          "value": "B",
+          "label": "有个大致方向，边做边调整",
+          "weight": {
+            "conscientiousness": 1,
+            "adaptability": 1
+          }
+        },
+        {
+          "value": "C",
+          "label": "不太做计划，走一步看一步",
+          "weight": {
+            "conscientiousness": -1,
+            "spontaneity": 1
+          }
+        },
+        {
+          "value": "D",
+          "label": "计划了也经常完不成",
+          "weight": {
+            "conscientiousness": -2,
+            "discipline": -1
+          }
+        }
+      ]
+    },
+    {
+      "id": "G3",
+      "dimension": "big_five_supplement",
+      "type": "single_choice",
+      "text": "当你面对压力或不确定性时，你更常见的状态是？",
+      "options": [
+        {
+          "value": "A",
+          "label": "能保持冷静，理性应对",
+          "weight": {
+            "neuroticism": -2,
+            "emotion_regulation": 2
+          }
+        },
+        {
+          "value": "B",
+          "label": "有点焦虑，但能控制住",
+          "weight": {
+            "neuroticism": 1,
+            "emotion_regulation": 1
+          }
+        },
+        {
+          "value": "C",
+          "label": "情绪波动明显，需要时间平复",
+          "weight": {
+            "neuroticism": 2,
+            "emotion": 1
+          }
+        },
+        {
+          "value": "D",
+          "label": "容易失眠或反复纠结",
+          "weight": {
+            "neuroticism": 3,
+            "rumination": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "G4",
+      "dimension": "big_five_supplement",
+      "type": "ranking",
+      "text": "请对以下六项按你真实的重要程度排序（最重要=1，最不重要=6）。注意：不是按",
+      "items": [
+        {
+          "id": "G4-1",
+          "label": "自由（可以做自己想做的事）",
+          "weight": {
+            "autonomy": 4
+          }
+        },
+        {
+          "id": "G4-2",
+          "label": "成就感（做成一些事情）",
+          "weight": {
+            "achievement": 4
+          }
+        },
+        {
+          "id": "G4-3",
+          "label": "关系（和重要的人在一起）",
+          "weight": {
+            "relationship": 4
+          }
+        },
+        {
+          "id": "G4-4",
+          "label": "安全（稳定、可预期）",
+          "weight": {
+            "security": 4
+          }
+        },
+        {
+          "id": "G4-5",
+          "label": "被尊重（被他人认可和尊重）",
+          "weight": {
+            "social_status": 4
+          }
+        },
+        {
+          "id": "G4-6",
+          "label": "被需要（感觉自己对他人有价值）",
+          "weight": {
+            "contribution": 4
+          }
+        }
+      ]
+    },
+    {
+      "id": "G5",
+      "dimension": "big_five_supplement",
+      "type": "single_choice",
+      "text": "假设你遇到一个危急情况：你看到有人遇到危险需要帮助，但如果你出手帮助，自己可能会承受不小的损失（比如金钱、时间甚至风险）。你会？",
+      "options": [
+        {
+          "value": "A",
+          "label": "毫不犹豫地帮助",
+          "weight": {
+            "altruism": 3,
+            "principle": 2
+          }
+        },
+        {
+          "value": "B",
+          "label": "先评估损失，再决定帮不帮",
+          "weight": {
+            "pragmatism": 2,
+            "analysis": 1
+          }
+        },
+        {
+          "value": "C",
+          "label": "不会主动帮忙，但愿意出钱",
+          "weight": {
+            "detachment": 1,
+            "contribution": 1
+          }
+        },
+        {
+          "value": "D",
+          "label": "优先保护自己，帮不帮看情况",
+          "weight": {
+            "self_protection": 3,
+            "security": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "H1",
+      "dimension": "motivation_structure",
+      "type": "single_choice",
+      "text": "你做一件重要的事情时，更核心的动力来源是？",
+      "options": [
+        {
+          "value": "A",
+          "label": "自己真正想做，是内在驱动的",
+          "weight": {
+            "autonomy_internal": 3,
+            "intrinsic": 2
+          }
+        },
+        {
+          "value": "B",
+          "label": "既有内在意愿，也受外部因素影响",
+          "weight": {
+            "autonomy_blended": 2,
+            "balanced": 1
+          }
+        },
+        {
+          "value": "C",
+          "label": "主要是因为外部压力或要求",
+          "weight": {
+            "autonomy_external": 3,
+            "extrinsic": 2
+          }
+        },
+        {
+          "value": "D",
+          "label": "说不清，好像做什么都是被推着走",
+          "weight": {
+            "autonomy_lacking": 2,
+            "passivity": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "H2",
+      "dimension": "motivation_structure",
+      "type": "single_choice",
+      "text": "让你最有成就感的事是？",
+      "options": [
+        {
+          "value": "A",
+          "label": "完成一件困难到自己都怀疑的事",
+          "weight": {
+            "competence_challenge": 3,
+            "mastery": 2
+          }
+        },
+        {
+          "value": "B",
+          "label": "轻松搞定，没费什么力气",
+          "weight": {
+            "competence_ease": 2,
+            "efficiency": 1
+          }
+        },
+        {
+          "value": "C",
+          "label": "得到他人的高度认可和赞赏",
+          "weight": {
+            "competence_recognition": 2,
+            "social_approval": 2
+          }
+        },
+        {
+          "value": "D",
+          "label": "和一群人一起完成了一件大事",
+          "weight": {
+            "competence_collaboration": 2,
+            "teamwork": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "H3",
+      "dimension": "motivation_structure",
+      "type": "single_choice",
+      "text": "如果让你选择独处一周（做自己喜欢的事，但没有任何社交），你会？",
+      "options": [
+        {
+          "value": "A",
+          "label": "很享受，这是我一直想要的",
+          "weight": {
+            "relatedness_low": 2,
+            "solitude": 2
+          }
+        },
+        {
+          "value": "B",
+          "label": "一开始可以，但一周太长了",
+          "weight": {
+            "relatedness_moderate": 1,
+            "balance": 1
+          }
+        },
+        {
+          "value": "C",
+          "label": "一周可能有点久，但独处很充电",
+          "weight": {
+            "relatedness_prefer_alone": 1,
+            "introversion": 1
+          }
+        },
+        {
+          "value": "D",
+          "label": "不行，完全无法接受没有社交",
+          "weight": {
+            "relatedness_high": 3,
+            "social_need": 2
+          }
+        }
+      ]
+    }
+  ],
+  "scoring": {
+    "trait_mapping": {
+      "internal": "内归因倾向",
+      "external": "外归因倾向",
+      "risk_seeking": "风险偏好",
+      "risk_averse": "风险规避",
+      "social": "人际导向",
+      "independence": "独立自主",
+      "analysis": "理性分析",
+      "intuition": "直觉决策",
+      "reflection": "反思习惯",
+      "action": "行动导向",
+      "stability": "稳定性",
+      "growth": "成长导向",
+      "autonomy": "自主性",
+      "achievement": "成就感",
+      "relationship": "关系导向",
+      "security": "安全感",
+      "integrity": "诚信正直",
+      "intellect": "智识追求",
+      "leadership": "领导力",
+      "empathy": "同理心",
+      "emotion_regulation": "情绪调节",
+      "learning": "学习能力",
+      "openness": "开放性",
+      "conscientiousness": "尽责性",
+      "neuroticism": "情绪稳定性（低=稳定，高=敏感）",
+      "autonomy_internal": "内在自主驱动",
+      "autonomy_external": "外在驱动",
+      "autonomy_blended": "混合驱动",
+      "autonomy_lacking": "被动状态",
+      "competence_challenge": "挑战型能力感",
+      "competence_ease": "轻松型能力感",
+      "competence_recognition": "认可型能力感",
+      "competence_collaboration": "协作型能力感",
+      "relatedness_high": "高社交需求",
+      "relatedness_low": "低社交需求",
+      "social_status": "社会地位需求",
+      "altruism": "利他倾向",
+      "pragmatism": "实用主义",
+      "self_protection": "自我保护倾向",
+      "social_approval": "社会认可需求"
+    },
+    "score_ranges": {
+      "high": {
+        "min": 6,
+        "label": "高"
+      },
+      "medium": {
+        "min": 3,
+        "max": 5,
+        "label": "中"
+      },
+      "low": {
+        "max": 2,
+        "label": "低"
+      }
+    }
+  },
+  "changelog": [
+    {
+      "version": "1.2.0",
+      "date": "2026-04-26",
+      "changes": [
+        "新增维度G：大五人格补充（开放性、尽责性、情绪稳定性），5题",
+        "新增维度H：动机结构（SDT三要素：自主感、能力感、关联感），3题",
+        "F1排序题扩展为6项强迫排序，新增被尊重、被需要两个社会赞许陷阱项",
+        "新增trait_mapping标签：openness/conscientiousness/neuroticism及SDT相关标签",
+        "题库总数：28题 → 39题"
+      ]
+    },
+    {
+      "version": "1.0.0",
+      "date": "2026-04-24",
+      "changes": [
+        "初始版本"
+      ]
+    }
+  ]
+}
