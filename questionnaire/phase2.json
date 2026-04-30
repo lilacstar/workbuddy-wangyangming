@@ -1,0 +1,226 @@
+{
+  "version": "1.2.0",
+  "name": "王阳明·情境反应题库",
+  "description": "通过情境题探测思维框架与决策模式",
+  "estimatedTime": "18分钟",
+  "coreScenarios": 7,
+  "analysisFramework": {
+    "dimensions": [
+      {
+        "id": "self_cognition",
+        "name": "自我认知"
+      },
+      {
+        "id": "conflict_handling",
+        "name": "冲突处理"
+      },
+      {
+        "id": "moral_judgment",
+        "name": "道德判断"
+      },
+      {
+        "id": "decision_making",
+        "name": "决策风格"
+      },
+      {
+        "id": "risk_tolerance",
+        "name": "风险承受"
+      },
+      {
+        "id": "attachment_style",
+        "name": "依恋风格"
+      }
+    ],
+    "output": {
+      "decision_process": "决策过程特征",
+      "value_expression": "价值观表达",
+      "reaction_speed": "反应速度",
+      "coping_strategy": "应对策略",
+      "attachment_style": "依恋风格（安全型/焦虑型/回避型）"
+    }
+  },
+  "scenarios": [
+    {
+      "id": "S1",
+      "title": "意外之财",
+      "dimension": "self_cognition",
+      "scenario": "在路边捡到一个装满现金的钱包，里面有身份证和联系方式。",
+      "description": "这道题考察你在利益诱惑下的决策模式和自我认知。",
+      "required": true,
+      "mainQuestions": [
+        "你会怎么做？",
+        "你做这个决定时的第一反应是什么？"
+      ],
+      "followUpQuestions": [
+        {
+          "condition": "whenAnswerIsGiven",
+          "questions": [
+            "你做出这个选择，背后最深的驱动是什么？（比如害怕失去、渴望被认可、只是觉得'应该这样'……）"
+          ]
+        }
+      ],
+      "analysis": {
+        "decision_process": "描述决策过程",
+        "value_expression": "描述价值观表达",
+        "reaction_speed": "fast/medium/slow",
+        "coping_strategy": "描述应对策略"
+      }
+    },
+    {
+      "id": "S2",
+      "title": "权威挑战",
+      "dimension": "conflict_handling",
+      "scenario": "在工作中，你发现领导的某个决定明显存在问题，实施下去很可能会导致项目失败或造成损失。但提出反对意见可能会影响你的职业发展——领导可能会觉得你'不听话'或者'刺头'。",
+      "description": "这道题考察你在权力不对等场景下的应对策略。",
+      "required": true,
+      "mainQuestions": [
+        "你会怎么做？",
+        "你会用什么方式表达你的反对意见？"
+      ],
+      "followUpQuestions": [
+        {
+          "condition": "whenAnswerIsGiven",
+          "questions": [
+            "你做出这个选择，背后最深的驱动是什么？（比如害怕失去、渴望被认可、只是觉得'应该这样'……）"
+          ]
+        }
+      ],
+      "analysis": {
+        "decision_process": "描述决策过程",
+        "value_expression": "描述价值观表达",
+        "reaction_speed": "fast/medium/slow",
+        "coping_strategy": "描述应对策略"
+      }
+    },
+    {
+      "id": "S3",
+      "title": "道德困境",
+      "dimension": "moral_judgment",
+      "scenario": "你发现你最信任的朋友在背后说了你的一些隐私给其他同事，虽然不是恶意，但也让你感到被背叛。",
+      "description": "这道题考察你的道德判断标准和情绪处理方式。",
+      "required": true,
+      "mainQuestions": [
+        "你会怎么处理这件事？",
+        "你会直接找他谈吗？"
+      ],
+      "followUpQuestions": [
+        {
+          "condition": "whenAnswerIsGiven",
+          "questions": [
+            "你做出这个选择，背后最深的驱动是什么？（比如害怕失去、渴望被认可、只是觉得'应该这样'……）"
+          ]
+        }
+      ],
+      "analysis": {
+        "decision_process": "描述决策过程",
+        "value_expression": "描述价值观表达",
+        "reaction_speed": "fast/medium/slow",
+        "coping_strategy": "描述应对策略"
+      }
+    },
+    {
+      "id": "S4",
+      "title": "利益抉择",
+      "dimension": "decision_making",
+      "scenario": "有一个很好的工作机会，薪水比现在高50%，但需要你去一个完全陌生的城市，你需要重新建立社交圈。",
+      "description": "这道题考察你的决策风格和风险承受能力。",
+      "required": true,
+      "mainQuestions": [
+        "你会如何评估这个机会？",
+        "你最终会做决定吗？"
+      ],
+      "followUpQuestions": [
+        {
+          "condition": "whenAnswerIsGiven",
+          "questions": [
+            "你做出这个选择，背后最深的驱动是什么？（比如害怕失去、渴望被认可、只是觉得'应该这样'……）"
+          ]
+        }
+      ],
+      "analysis": {
+        "decision_process": "描述决策过程",
+        "value_expression": "描述价值观表达",
+        "reaction_speed": "fast/medium/slow",
+        "coping_strategy": "描述应对策略"
+      }
+    },
+    {
+      "id": "S5",
+      "title": "失败复盘",
+      "dimension": "risk_tolerance",
+      "scenario": "你负责的一个重要项目最终失败了，虽然不是你的主要责任，但团队业绩受到了影响。",
+      "description": "这道题考察你面对失败的态度和东山再起的勇气。",
+      "required": true,
+      "mainQuestions": [
+        "你会如何面对这个结果？",
+        "你会怎么跟团队沟通？"
+      ],
+      "followUpQuestions": [
+        {
+          "condition": "whenAnswerIsGiven",
+          "questions": [
+            "你做出这个选择，背后最深的驱动是什么？（比如害怕失去、渴望被认可、只是觉得'应该这样'……）"
+          ]
+        }
+      ],
+      "analysis": {
+        "decision_process": "描述决策过程",
+        "value_expression": "描述价值观表达",
+        "reaction_speed": "fast/medium/slow",
+        "coping_strategy": "描述应对策略"
+      }
+    },
+    {
+      "id": "S6A",
+      "title": "依恋压力-恋人",
+      "dimension": "attachment_style",
+      "scenario": "在一起3年的恋人突然变得冷淡，信息回复变慢，约会减少，你不知道发生了什么。",
+      "description": "这道题考察你在亲密关系中的依恋风格和应对方式。",
+      "required": true,
+      "mainQuestions": [
+        "你会怎么做？",
+        "你会主动询问发生了什么吗？"
+      ],
+      "followUpQuestions": [
+        {
+          "condition": "whenAnswerIsGiven",
+          "questions": [
+            "你做出这个选择，背后最深的驱动是什么？（比如害怕失去、渴望被认可、只是觉得'应该这样'……）"
+          ]
+        }
+      ],
+      "analysis": {
+        "attachment_style": "安全型/焦虑型/回避型依恋风格的反应信号",
+        "reaction_speed": "fast/medium/slow",
+        "coping_strategy": "描述应对策略",
+        "communication_approach": "描述沟通方式"
+      }
+    },
+    {
+      "id": "S6B",
+      "title": "依恋压力-家人",
+      "dimension": "attachment_style",
+      "scenario": "关系一直很好的父亲/母亲突然对你变得冷淡，不再主动联系你，你不知道发生了什么。",
+      "description": "这道题考察你在亲密关系中的依恋风格和应对方式。",
+      "required": true,
+      "mainQuestions": [
+        "你会怎么做？",
+        "你会主动询问发生了什么吗？"
+      ],
+      "followUpQuestions": [
+        {
+          "condition": "whenAnswerIsGiven",
+          "questions": [
+            "你做出这个选择，背后最深的驱动是什么？（比如害怕失去、渴望被认可、只是觉得'应该这样'……）"
+          ]
+        }
+      ],
+      "analysis": {
+        "attachment_style": "安全型/焦虑型/回避型依恋风格的反应信号",
+        "reaction_speed": "fast/medium/slow",
+        "coping_strategy": "描述应对策略",
+        "communication_approach": "描述沟通方式"
+      }
+    }
+  ]
+}
